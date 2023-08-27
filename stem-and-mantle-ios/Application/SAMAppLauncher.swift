@@ -8,7 +8,15 @@
 import SwiftUI
 
 @main
-struct stem_and_mantle_iosApp: App {
+struct SAMAppLauncher: App {
+    let app = SAMApp()
+    
+    init() {
+        self.app.api.signIn(username: "", password: "") { (result) in
+            print("bar")
+            
+        }
+    }
     var body: some Scene {
         WindowGroup {
             ContentView()
