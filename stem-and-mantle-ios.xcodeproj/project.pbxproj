@@ -20,7 +20,8 @@
 		F31EE2CA2A9BA042004AE7EB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31EE2C92A9BA042004AE7EB /* User.swift */; };
 		F31EE2CC2A9BA234004AE7EB /* SAMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31EE2CB2A9BA233004AE7EB /* SAMApp.swift */; };
 		F31EE2CE2A9BA3E9004AE7EB /* UserAccountAccessData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31EE2CD2A9BA3E9004AE7EB /* UserAccountAccessData.swift */; };
-		F31EE2D02A9BC767004AE7EB /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31EE2CF2A9BC767004AE7EB /* LogInView.swift */; };
+		F31EE2D02A9BC767004AE7EB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31EE2CF2A9BC767004AE7EB /* LoginView.swift */; };
+		F31EE2D22A9BCF1F004AE7EB /* FormFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31EE2D12A9BCF1F004AE7EB /* FormFieldView.swift */; };
 		F31F25E02A9B986A00670827 /* SAMAppLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31F25DF2A9B986A00670827 /* SAMAppLauncher.swift */; };
 		F31F25E22A9B986A00670827 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31F25E12A9B986A00670827 /* ContentView.swift */; };
 		F31F25E42A9B986B00670827 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F31F25E32A9B986B00670827 /* Assets.xcassets */; };
@@ -61,7 +62,8 @@
 		F31EE2C92A9BA042004AE7EB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F31EE2CB2A9BA233004AE7EB /* SAMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAMApp.swift; sourceTree = "<group>"; };
 		F31EE2CD2A9BA3E9004AE7EB /* UserAccountAccessData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountAccessData.swift; sourceTree = "<group>"; };
-		F31EE2CF2A9BC767004AE7EB /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
+		F31EE2CF2A9BC767004AE7EB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F31EE2D12A9BCF1F004AE7EB /* FormFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormFieldView.swift; sourceTree = "<group>"; };
 		F31F25DC2A9B986A00670827 /* stem-and-mantle-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "stem-and-mantle-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F31F25DF2A9B986A00670827 /* SAMAppLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAMAppLauncher.swift; sourceTree = "<group>"; };
 		F31F25E12A9B986A00670827 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -139,7 +141,8 @@
 			isa = PBXGroup;
 			children = (
 				F31F25E12A9B986A00670827 /* ContentView.swift */,
-				F31EE2CF2A9BC767004AE7EB /* LogInView.swift */,
+				F31EE2CF2A9BC767004AE7EB /* LoginView.swift */,
+				F31EE2D12A9BCF1F004AE7EB /* FormFieldView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -349,13 +352,14 @@
 				F31EE2BF2A9B9DCC004AE7EB /* LocalJsonFileHandler.swift in Sources */,
 				F31EE2BE2A9B9DCC004AE7EB /* Network.swift in Sources */,
 				F31EE2C62A9BA00B004AE7EB /* SAMUnauthenticatedAPI.swift in Sources */,
+				F31EE2D22A9BCF1F004AE7EB /* FormFieldView.swift in Sources */,
 				F31EE2BC2A9B9DCC004AE7EB /* Extensions.swift in Sources */,
 				F31EE2B92A9B9DCC004AE7EB /* DateUtil.swift in Sources */,
 				F31F25E22A9B986A00670827 /* ContentView.swift in Sources */,
 				F31F25E02A9B986A00670827 /* SAMAppLauncher.swift in Sources */,
 				F31EE2BA2A9B9DCC004AE7EB /* PantryStapleErrors.swift in Sources */,
 				F31EE2CC2A9BA234004AE7EB /* SAMApp.swift in Sources */,
-				F31EE2D02A9BC767004AE7EB /* LogInView.swift in Sources */,
+				F31EE2D02A9BC767004AE7EB /* LoginView.swift in Sources */,
 				F31EE2CE2A9BA3E9004AE7EB /* UserAccountAccessData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

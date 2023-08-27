@@ -7,77 +7,137 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "B807C46F-86F3-4CEA-89EF-93B78DB0F8DC"
+            uuid = "E68350CB-D329-42F6-AC5E-4BC76B067286"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "stem-and-mantle-ios/Network/SAMUnauthenticatedAPI.swift"
+            filePath = "stem-and-mantle-ios/UI/LogInView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "signIn(username:password:completion:)"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "onLoginButtonTapped(app:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "B807C46F-86F3-4CEA-89EF-93B78DB0F8DC - 3563086a8d3b6c09"
+                  uuid = "E68350CB-D329-42F6-AC5E-4BC76B067286 - 893a323c5380be5"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSHTTPURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in stem_and_mantle_ios.SAMUnauthenticatedAPI.signIn(username: Swift.String, password: Swift.String, completion: (Swift.Result&lt;stem_and_mantle_ios.UserAccountAccessData, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  symbolName = "property wrapper backing initializer of stem_and_mantle_ios.LogInView.viewModel : stem_and_mantle_ios.LogInViewModel"
                   moduleName = "stem-and-mantle-ios"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jessica.dyer@leveltenenergy.com/Repositories/stem-and-mantle-ios/stem-and-mantle-ios/Network/SAMUnauthenticatedAPI.swift"
+                  urlString = "file:///Users/jessica.dyer@leveltenenergy.com/Repositories/stem-and-mantle-ios/stem-and-mantle-ios/UI/LogInView.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
-                  offsetFromSymbolStart = "720">
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "28">
                </Location>
                <Location
-                  uuid = "B807C46F-86F3-4CEA-89EF-93B78DB0F8DC - 3563086a8d3b6c09"
+                  uuid = "E68350CB-D329-42F6-AC5E-4BC76B067286 - 298ac526191561d7"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSHTTPURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in stem_and_mantle_ios.SAMUnauthenticatedAPI.signIn(username: Swift.String, password: Swift.String, completion: (Swift.Result&lt;stem_and_mantle_ios.UserAccountAccessData, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  symbolName = "stem_and_mantle_ios.LogInView.viewModel.getter : stem_and_mantle_ios.LogInViewModel"
                   moduleName = "stem-and-mantle-ios"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jessica.dyer@leveltenenergy.com/Repositories/stem-and-mantle-ios/stem-and-mantle-ios/Network/SAMUnauthenticatedAPI.swift"
+                  urlString = "file:///Users/jessica.dyer@leveltenenergy.com/Repositories/stem-and-mantle-ios/stem-and-mantle-ios/UI/LogInView.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
-                  offsetFromSymbolStart = "780">
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "72">
                </Location>
                <Location
-                  uuid = "B807C46F-86F3-4CEA-89EF-93B78DB0F8DC - 2e152f0236121697"
+                  uuid = "E68350CB-D329-42F6-AC5E-4BC76B067286 - bae409cc2e5769a3"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "stem_and_mantle_ios.SAMUnauthenticatedAPI.signIn(username: Swift.String, password: Swift.String, completion: (Swift.Result&lt;stem_and_mantle_ios.UserAccountAccessData, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  symbolName = "stem_and_mantle_ios.LogInView.viewModel.setter : stem_and_mantle_ios.LogInViewModel"
                   moduleName = "stem-and-mantle-ios"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jessica.dyer@leveltenenergy.com/Repositories/stem-and-mantle-ios/stem-and-mantle-ios/Network/SAMUnauthenticatedAPI.swift"
+                  urlString = "file:///Users/jessica.dyer@leveltenenergy.com/Repositories/stem-and-mantle-ios/stem-and-mantle-ios/UI/LogInView.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
-                  offsetFromSymbolStart = "1508">
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "64">
                </Location>
                <Location
-                  uuid = "B807C46F-86F3-4CEA-89EF-93B78DB0F8DC - 7875dee9e861635e"
+                  uuid = "E68350CB-D329-42F6-AC5E-4BC76B067286 - 7ec6a050df910fd4"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;stem_and_mantle_ios.SAMTokenData&gt;, Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSHTTPURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in stem_and_mantle_ios.SAMUnauthenticatedAPI.signIn(username: Swift.String, password: Swift.String, completion: (Swift.Result&lt;stem_and_mantle_ios.UserAccountAccessData, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  symbolName = "stem_and_mantle_ios.LogInView.viewModel.modify : stem_and_mantle_ios.LogInViewModel"
                   moduleName = "stem-and-mantle-ios"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jessica.dyer@leveltenenergy.com/Repositories/stem-and-mantle-ios/stem-and-mantle-ios/Network/SAMUnauthenticatedAPI.swift"
+                  urlString = "file:///Users/jessica.dyer@leveltenenergy.com/Repositories/stem-and-mantle-ios/stem-and-mantle-ios/UI/LogInView.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "36"
-                  endingLineNumber = "36"
-                  offsetFromSymbolStart = "248">
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "E68350CB-D329-42F6-AC5E-4BC76B067286 - 87c1ed4335d498b9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "stem_and_mantle_ios.LogInView.viewModel.modify : stem_and_mantle_ios.LogInViewModel with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "stem-and-mantle-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessica.dyer@leveltenenergy.com/Repositories/stem-and-mantle-ios/stem-and-mantle-ios/UI/LogInView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "E68350CB-D329-42F6-AC5E-4BC76B067286 - 98407805ed1dd4f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "stem_and_mantle_ios.LogInView.$viewModel.getter : SwiftUI.ObservedObject&lt;stem_and_mantle_ios.LogInViewModel&gt;.Wrapper"
+                  moduleName = "stem-and-mantle-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessica.dyer@leveltenenergy.com/Repositories/stem-and-mantle-ios/stem-and-mantle-ios/UI/LogInView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "E68350CB-D329-42F6-AC5E-4BC76B067286 - 86ae2affbfd50dd9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "stem_and_mantle_ios.LogInView.init() -&gt; stem_and_mantle_ios.LogInView"
+                  moduleName = "stem-and-mantle-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessica.dyer@leveltenenergy.com/Repositories/stem-and-mantle-ios/stem-and-mantle-ios/UI/LogInView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "100">
+               </Location>
+               <Location
+                  uuid = "E68350CB-D329-42F6-AC5E-4BC76B067286 - 8c91ff408d7e842d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;stem_and_mantle_ios.UserAccountAccessData, Swift.Error&gt;) -&gt; () in stem_and_mantle_ios.LogInViewModel.onLoginButtonTapped(app: stem_and_mantle_ios.SAMApp) -&gt; ()"
+                  moduleName = "stem-and-mantle-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessica.dyer@leveltenenergy.com/Repositories/stem-and-mantle-ios/stem-and-mantle-ios/UI/LogInView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "116">
                </Location>
             </Locations>
          </BreakpointContent>
