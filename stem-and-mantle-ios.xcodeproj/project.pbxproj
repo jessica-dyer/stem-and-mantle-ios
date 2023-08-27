@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F31EE2B92A9B9DCC004AE7EB /* DateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31EE2B12A9B9DCC004AE7EB /* DateUtil.swift */; };
+		F31EE2BA2A9B9DCC004AE7EB /* PantryStapleErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31EE2B22A9B9DCC004AE7EB /* PantryStapleErrors.swift */; };
+		F31EE2BB2A9B9DCC004AE7EB /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31EE2B32A9B9DCC004AE7EB /* Utility.swift */; };
+		F31EE2BC2A9B9DCC004AE7EB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31EE2B42A9B9DCC004AE7EB /* Extensions.swift */; };
+		F31EE2BD2A9B9DCC004AE7EB /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31EE2B52A9B9DCC004AE7EB /* UIDevice+Extension.swift */; };
+		F31EE2BE2A9B9DCC004AE7EB /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31EE2B62A9B9DCC004AE7EB /* Network.swift */; };
+		F31EE2BF2A9B9DCC004AE7EB /* LocalJsonFileHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31EE2B72A9B9DCC004AE7EB /* LocalJsonFileHandler.swift */; };
+		F31EE2C02A9B9DCC004AE7EB /* PantryLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31EE2B82A9B9DCC004AE7EB /* PantryLog.swift */; };
 		F31F25E02A9B986A00670827 /* stem_and_mantle_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31F25DF2A9B986A00670827 /* stem_and_mantle_iosApp.swift */; };
 		F31F25E22A9B986A00670827 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31F25E12A9B986A00670827 /* ContentView.swift */; };
 		F31F25E42A9B986B00670827 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F31F25E32A9B986B00670827 /* Assets.xcassets */; };
@@ -34,6 +42,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F31EE2B12A9B9DCC004AE7EB /* DateUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtil.swift; sourceTree = "<group>"; };
+		F31EE2B22A9B9DCC004AE7EB /* PantryStapleErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PantryStapleErrors.swift; sourceTree = "<group>"; };
+		F31EE2B32A9B9DCC004AE7EB /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		F31EE2B42A9B9DCC004AE7EB /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F31EE2B52A9B9DCC004AE7EB /* UIDevice+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
+		F31EE2B62A9B9DCC004AE7EB /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		F31EE2B72A9B9DCC004AE7EB /* LocalJsonFileHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalJsonFileHandler.swift; sourceTree = "<group>"; };
+		F31EE2B82A9B9DCC004AE7EB /* PantryLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PantryLog.swift; sourceTree = "<group>"; };
 		F31F25DC2A9B986A00670827 /* stem-and-mantle-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "stem-and-mantle-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F31F25DF2A9B986A00670827 /* stem_and_mantle_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stem_and_mantle_iosApp.swift; sourceTree = "<group>"; };
 		F31F25E12A9B986A00670827 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +88,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F31EE2B02A9B9D8F004AE7EB /* Swift Pantry Staples */ = {
+			isa = PBXGroup;
+			children = (
+				F31EE2B12A9B9DCC004AE7EB /* DateUtil.swift */,
+				F31EE2B42A9B9DCC004AE7EB /* Extensions.swift */,
+				F31EE2B72A9B9DCC004AE7EB /* LocalJsonFileHandler.swift */,
+				F31EE2B62A9B9DCC004AE7EB /* Network.swift */,
+				F31EE2B82A9B9DCC004AE7EB /* PantryLog.swift */,
+				F31EE2B22A9B9DCC004AE7EB /* PantryStapleErrors.swift */,
+				F31EE2B52A9B9DCC004AE7EB /* UIDevice+Extension.swift */,
+				F31EE2B32A9B9DCC004AE7EB /* Utility.swift */,
+			);
+			path = "Swift Pantry Staples";
+			sourceTree = "<group>";
+		};
 		F31F25D32A9B986A00670827 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +126,7 @@
 		F31F25DE2A9B986A00670827 /* stem-and-mantle-ios */ = {
 			isa = PBXGroup;
 			children = (
+				F31EE2B02A9B9D8F004AE7EB /* Swift Pantry Staples */,
 				F31F25DF2A9B986A00670827 /* stem_and_mantle_iosApp.swift */,
 				F31F25E12A9B986A00670827 /* ContentView.swift */,
 				F31F25E32A9B986B00670827 /* Assets.xcassets */,
@@ -259,8 +291,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F31EE2C02A9B9DCC004AE7EB /* PantryLog.swift in Sources */,
+				F31EE2BB2A9B9DCC004AE7EB /* Utility.swift in Sources */,
+				F31EE2BD2A9B9DCC004AE7EB /* UIDevice+Extension.swift in Sources */,
+				F31EE2BF2A9B9DCC004AE7EB /* LocalJsonFileHandler.swift in Sources */,
+				F31EE2BE2A9B9DCC004AE7EB /* Network.swift in Sources */,
+				F31EE2BC2A9B9DCC004AE7EB /* Extensions.swift in Sources */,
+				F31EE2B92A9B9DCC004AE7EB /* DateUtil.swift in Sources */,
 				F31F25E22A9B986A00670827 /* ContentView.swift in Sources */,
 				F31F25E02A9B986A00670827 /* stem_and_mantle_iosApp.swift in Sources */,
+				F31EE2BA2A9B9DCC004AE7EB /* PantryStapleErrors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
