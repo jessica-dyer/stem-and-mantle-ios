@@ -7,7 +7,7 @@
 
 import Foundation
 
-class SAMApp {
+class SAMApp: ObservableObject {
     let api: SAMUnauthenticatedAPI
     var user: User?
     

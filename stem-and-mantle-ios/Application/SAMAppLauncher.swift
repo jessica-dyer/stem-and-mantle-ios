@@ -23,7 +23,15 @@ struct SAMAppLauncher: App {
     }
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            NavigationView {
+                NavigationLink {
+                    LogInView().environmentObject(app)
+                } label: {
+                    Text("Login")
+                        .foregroundColor(.blue)
+                }
+            }
         }
     }
 }
