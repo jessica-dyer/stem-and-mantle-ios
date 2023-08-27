@@ -24,22 +24,26 @@ class SAMUnauthenticatedAPI {
     func signIn(username: String, password: String, completion: @escaping(SignInCompletionHandler)) {
         let urlString = self.host.rawValue + "login"
         let body = "grant_type=&username=jessica%40gmail.com&password=password&scope=&client_id=&client_secret="
-        let data = body.data(using: .utf8)! //Never use an !
+        guard let data = body.data(using: .utf8) else {
+            completion(.failure(SAMError.dataEncodingFailed(message: "from SignIn"))
+            )
+            return
+        }
         
-        Network.post(urlString, httpBody: data) { (data: Data?, response: HTTPURLResponse?, error: Error?) in
-            if let tokenDataAsJson = data {
-                let tokenDataAsString = String(decoding: tokenDataAsJson, as: UTF8.self)
-                print(tokenDataAsString)
-                let tokenData: SAMTokenData? = try? JSONDecoder().decode(SAMTokenData.self, from: tokenDataAsJson)
-                if let tokenData = tokenData {
-                    let accessData = UserAccountAccessData(host: self.host, tokenData: tokenData)
-                    completion(Result.success(accessData))
-                } else {
-//                    completion(.failure())
-                }
+        Network.callJsonEndpoint(httpMethod: .POST, urlString, httpBody: data, expectingResponseType: SAMTokenData.self) { (tokenData, rawData, httpResponse, error) in
+            
+            if let error = error {
+                completion(.failure(error))
+                return
             }
             
-            print("foo")
+            if let tokenData = tokenData {
+                let accessData = UserAccountAccessData(host: self.host, tokenData: tokenData)
+                completion(Result.success(accessData))
+            } else {
+                print("Weird, both tokenData & error are nil?")
+                completion(.failure(PantryError.nilResponseAndNoError))
+            }
         }
     }
 }

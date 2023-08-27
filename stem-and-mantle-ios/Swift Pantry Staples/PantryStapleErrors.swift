@@ -26,6 +26,11 @@ enum PantryError: Swift.Error {
     case invalidDate(from: String)
 }
 
+enum SAMError: Swift.Error {
+    
+    case dataEncodingFailed(message: String)
+}
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 func getWhyString(forError error: Swift.Error?) -> String {
     var why: String = "";
@@ -65,7 +70,9 @@ func getWhyString(forError error: Swift.Error?) -> String {
                 why += " on \(line)"
             }
             
-        
+            //*** MARK: SAM Errors ***
+        } catch SAMError.dataEncodingFailed(let message) {
+            why = "Data encoding failed: \(message)"
             
             //*** MARK: NSError Errors ***
         } catch let error as NSError {

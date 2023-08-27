@@ -86,7 +86,7 @@ class Network {
     }
     
     /// Note on the completion:  For 99% of people out there, responseAsRawData is redundant and useless, since what you want is responseAsObject.  But there are some rare cases were we want the raw, unparsed data for debugging, so it's a parameter available in the completion handler for those uses.
-    static func callJsonEndpoint<SendType:Encodable,ReceiveType:Decodable>(httpMethod: HTTPMethod, _ urlString: String, _ customHeaders: [String:String]? = nil, sendingObject: SendType? = nil, expectingResponseType:ReceiveType.Type, completion: @escaping( _ responseAsObject : ReceiveType?, _ responseAsRawData: Data?, _ : HTTPURLResponse?, _ : Error? ) -> Void  )
+    static func callJsonEndpoint<SendType:Encodable, ReceiveType:Decodable>(httpMethod: HTTPMethod, _ urlString: String, _ customHeaders: [String:String]? = nil, sendingObject: SendType? = nil, expectingResponseType:ReceiveType.Type, completion: @escaping( _ responseAsObject : ReceiveType?, _ responseAsRawData: Data?, _ : HTTPURLResponse?, _ : Error? ) -> Void  )
     {
         var dataToSend: Data? = nil
         if let sendingObject = sendingObject {
@@ -101,6 +101,11 @@ class Network {
                 return
             }
         }
+        
+        Network.callJsonEndpoint(httpMethod: httpMethod, urlString, customHeaders, httpBody: dataToSend, expectingResponseType: expectingResponseType, completion: completion)
+    }
+    
+    static func callJsonEndpoint<ReceiveType:Decodable>(httpMethod: HTTPMethod, _ urlString: String, _ customHeaders: [String:String]? = nil, httpBody dataToSend: Data? = nil, expectingResponseType:ReceiveType.Type, completion: @escaping( _ responseAsObject : ReceiveType?, _ responseAsRawData: Data?, _ : HTTPURLResponse?, _ : Error? ) -> Void  ) {
         
         Network.call(httpMethod: httpMethod, fullUrlString: urlString, headers: customHeaders, httpBody: dataToSend) { ( responseJsonAsData, httpResponse, error ) in
             if let responseJsonAsData = responseJsonAsData {
