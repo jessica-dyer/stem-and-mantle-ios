@@ -12,7 +12,7 @@ class LoginViewModel: ObservableObject {
     var password: String = ""
 //    var onLoginButtonTapped: (() -> Void)? = nil
     func onLoginButtonTapped(app: SAMApp) {
-        app.api.signIn(username: "jessica@gmail.com", password: "password") { (result) in
+        app.api.signIn(username: self.userName, password: self.password) { (result) in
             switch result {
             case .success(let data):
                 print(data)
@@ -27,12 +27,15 @@ struct LoginView: View {
     @EnvironmentObject var app: SAMApp
     @ObservedObject var viewModel = LoginViewModel()
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-        Button {
-            self.viewModel.onLoginButtonTapped(app: self.app)
-        } label: {
-            Text("Login")
-                .foregroundColor(.blue)
+        VStack {
+            FormFieldView(placeholder: "Email", text: self.$viewModel.userName)
+            FormFieldView(placeholder: "Password", text: self.$viewModel.password)
+            Button {
+                self.viewModel.onLoginButtonTapped(app: self.app)
+            } label: {
+                Text("Login")
+                    .foregroundColor(.blue)
+            }
         }
     }
 }
