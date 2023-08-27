@@ -12,7 +12,7 @@ struct SAMAppLauncher: App {
     let app = SAMApp()
     
     init() {
-        self.app.api.signIn(username: "", password: "") { (result) in
+        self.app.api.signIn(username: "jessica@gmail.com", password: "password") { (result) in
             switch result {
             case .success(let data):
                 print(data)

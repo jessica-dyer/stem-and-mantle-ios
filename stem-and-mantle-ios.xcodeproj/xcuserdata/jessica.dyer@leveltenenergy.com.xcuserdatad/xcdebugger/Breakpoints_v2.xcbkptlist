@@ -7,15 +7,109 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "DE015797-ABF2-4C87-A7DB-8AC40077E4B0"
+            uuid = "B807C46F-86F3-4CEA-89EF-93B78DB0F8DC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "stem-and-mantle-ios/Network/SAMUnauthenticatedAPI.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "signIn(username:password:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B807C46F-86F3-4CEA-89EF-93B78DB0F8DC - 3563086a8d3b6c09"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSHTTPURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in stem_and_mantle_ios.SAMUnauthenticatedAPI.signIn(username: Swift.String, password: Swift.String, completion: (Swift.Result&lt;stem_and_mantle_ios.UserAccountAccessData, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "stem-and-mantle-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessica.dyer@leveltenenergy.com/Repositories/stem-and-mantle-ios/stem-and-mantle-ios/Network/SAMUnauthenticatedAPI.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "720">
+               </Location>
+               <Location
+                  uuid = "B807C46F-86F3-4CEA-89EF-93B78DB0F8DC - 3563086a8d3b6c09"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSHTTPURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in stem_and_mantle_ios.SAMUnauthenticatedAPI.signIn(username: Swift.String, password: Swift.String, completion: (Swift.Result&lt;stem_and_mantle_ios.UserAccountAccessData, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "stem-and-mantle-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessica.dyer@leveltenenergy.com/Repositories/stem-and-mantle-ios/stem-and-mantle-ios/Network/SAMUnauthenticatedAPI.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "780">
+               </Location>
+               <Location
+                  uuid = "B807C46F-86F3-4CEA-89EF-93B78DB0F8DC - 2e152f0236121697"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "stem_and_mantle_ios.SAMUnauthenticatedAPI.signIn(username: Swift.String, password: Swift.String, completion: (Swift.Result&lt;stem_and_mantle_ios.UserAccountAccessData, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "stem-and-mantle-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessica.dyer@leveltenenergy.com/Repositories/stem-and-mantle-ios/stem-and-mantle-ios/Network/SAMUnauthenticatedAPI.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "1508">
+               </Location>
+               <Location
+                  uuid = "B807C46F-86F3-4CEA-89EF-93B78DB0F8DC - 7875dee9e861635e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;stem_and_mantle_ios.SAMTokenData&gt;, Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSHTTPURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in stem_and_mantle_ios.SAMUnauthenticatedAPI.signIn(username: Swift.String, password: Swift.String, completion: (Swift.Result&lt;stem_and_mantle_ios.UserAccountAccessData, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "stem-and-mantle-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessica.dyer@leveltenenergy.com/Repositories/stem-and-mantle-ios/stem-and-mantle-ios/Network/SAMUnauthenticatedAPI.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "248">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "74DC73AF-FCD9-4006-BE4B-5E2376DF07ED"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "stem-and-mantle-ios/Application/SAMAppLauncher.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "init()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0612C4B9-D2B3-4835-A03F-8736D2894E33"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "stem-and-mantle-ios/Application/SAMAppLauncher.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
             landmarkName = "init()"
             landmarkType = "7">
          </BreakpointContent>

@@ -23,8 +23,9 @@ class SAMUnauthenticatedAPI {
     
     func signIn(username: String, password: String, completion: @escaping(SignInCompletionHandler)) {
         let urlString = self.host.rawValue + "login"
-        let body = "grant_type=&username=jessica%40gmail.com&password=password&scope=&client_id=&client_secret="
-        guard let data = body.data(using: .utf8) else {
+        let body = "grant_type=&username=\(username)&password=\(password)&scope=&client_id=&client_secret="
+        guard let bodyUrlEncoded = body.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed),
+              let data = bodyUrlEncoded.data(using: .utf8) else {
             completion(.failure(SAMError.dataEncodingFailed(message: "from SignIn"))
             )
             return
