@@ -14,10 +14,74 @@
             filePath = "stem-and-mantle-ios/Network/SAMUnauthenticatedAPI.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
             landmarkName = "signIn(username:password:completion:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DE015797-ABF2-4C87-A7DB-8AC40077E4B0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "stem-and-mantle-ios/Application/SAMAppLauncher.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "init()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2CF3D3F7-6E33-4402-BE59-ABD1BD79A5C9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "stem-and-mantle-ios/Network/SAMUnauthenticatedAPI.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "signIn(username:password:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2CF3D3F7-6E33-4402-BE59-ABD1BD79A5C9 - 3563086a8d3b6c8d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSHTTPURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in stem_and_mantle_ios.SAMUnauthenticatedAPI.signIn(username: Swift.String, password: Swift.String, completion: (Swift.Result&lt;stem_and_mantle_ios.UserAccountAccessData, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "stem-and-mantle-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessica.dyer@leveltenenergy.com/Repositories/stem-and-mantle-ios/stem-and-mantle-ios/Network/SAMUnauthenticatedAPI.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "216">
+               </Location>
+               <Location
+                  uuid = "2CF3D3F7-6E33-4402-BE59-ABD1BD79A5C9 - 3563086a8d3b6c8d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSHTTPURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in stem_and_mantle_ios.SAMUnauthenticatedAPI.signIn(username: Swift.String, password: Swift.String, completion: (Swift.Result&lt;stem_and_mantle_ios.UserAccountAccessData, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "stem-and-mantle-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessica.dyer@leveltenenergy.com/Repositories/stem-and-mantle-ios/stem-and-mantle-ios/Network/SAMUnauthenticatedAPI.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "268">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

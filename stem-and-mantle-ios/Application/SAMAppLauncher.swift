@@ -13,8 +13,12 @@ struct SAMAppLauncher: App {
     
     init() {
         self.app.api.signIn(username: "", password: "") { (result) in
-            print("bar")
-            
+            switch result {
+            case .success(let data):
+                print(data)
+            case .failure(let error):
+                print(error)
+            }
         }
     }
     var body: some Scene {

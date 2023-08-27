@@ -25,10 +25,18 @@ class SAMUnauthenticatedAPI {
         let urlString = self.host.rawValue + "login"
         let body = "grant_type=&username=jessica%40gmail.com&password=password&scope=&client_id=&client_secret="
         let data = body.data(using: .utf8)! //Never use an !
+        
         Network.post(urlString, httpBody: data) { (data: Data?, response: HTTPURLResponse?, error: Error?) in
-            if let data = data {
-                let str = String(decoding: data, as: UTF8.self)
-                print(str)
+            if let tokenDataAsJson = data {
+                let tokenDataAsString = String(decoding: tokenDataAsJson, as: UTF8.self)
+                print(tokenDataAsString)
+                let tokenData: SAMTokenData? = try? JSONDecoder().decode(SAMTokenData.self, from: tokenDataAsJson)
+                if let tokenData = tokenData {
+                    let accessData = UserAccountAccessData(host: self.host, tokenData: tokenData)
+                    completion(Result.success(accessData))
+                } else {
+//                    completion(.failure())
+                }
             }
             
             print("foo")
