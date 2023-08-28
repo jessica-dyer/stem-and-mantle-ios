@@ -12,7 +12,7 @@ class SAMApp: ObservableObject {
     var user: User?
     
     init() {
-        self.api = SAMUnauthenticatedAPI(host: .prod)
+        self.api = SAMUnauthenticatedAPI(host: .local)
         self.user = nil
     }
     

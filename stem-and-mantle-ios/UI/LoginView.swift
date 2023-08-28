@@ -28,8 +28,8 @@ struct LoginView: View {
     @ObservedObject var viewModel = LoginViewModel()
     var body: some View {
         VStack {
-            FormFieldView(placeholder: "Email", text: self.$viewModel.userName)
-            FormFieldView(placeholder: "Password", text: self.$viewModel.password)
+            FormFieldView(placeholder: "Email", text: self.$viewModel.userName, isSecureField: false)
+            FormFieldView(placeholder: "Password", text: self.$viewModel.password, isSecureField: true)
             Button {
                 self.viewModel.onLoginButtonTapped(app: self.app)
             } label: {
