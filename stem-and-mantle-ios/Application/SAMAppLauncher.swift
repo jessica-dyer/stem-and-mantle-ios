@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct SAMAppLauncher: App {
-    let app: SAMApp
+    @ObservedObject var app: SAMApp
     
     init() {
         self.app = SAMApp()
@@ -17,14 +17,13 @@ struct SAMAppLauncher: App {
     }
     var body: some Scene {
         WindowGroup {
-//            ContentView()
-            NavigationView {
-                NavigationLink {
-                    LoginView().environmentObject(app)
-                } label: {
-                    Text("Login")
-                        .foregroundColor(.blue)
-                }
+            //self.app.currentRootView()
+            if let user = app.user {
+                WelcomeUserView()
+                    .environmentObject(self.app)
+                    .environmentObject(user)
+            } else {
+                LandingScreenWhenSignedOutView().environmentObject(self.app)
             }
         }
     }

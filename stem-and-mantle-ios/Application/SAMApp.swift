@@ -6,12 +6,19 @@
 //
 
 import Foundation
+import SwiftUI
 
 class SAMApp: ObservableObject {
     let api: SAMUnauthenticatedAPI
-    var user: User? {
+    @Published var user: User? {
         didSet {
-            
+            if let user = self.user {
+                PantryLog.log("Signed in for user: \(user.accountAccessData.userName)")
+                saveUserAccessData()
+            } else {
+                PantryLog.log("User has signed out.")
+                SAMPersistentStore.eraseAllUserData()
+            }
         }
     }
     

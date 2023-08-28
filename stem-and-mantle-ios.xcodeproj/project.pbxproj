@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		F31510612A9C20A600B0209C /* SAMPersistentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31510602A9C20A600B0209C /* SAMPersistentStore.swift */; };
+		F31510632A9C29CB00B0209C /* LandingScreenWhenSignedOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31510622A9C29CB00B0209C /* LandingScreenWhenSignedOutView.swift */; };
+		F31510672A9C2A7400B0209C /* WelcomeUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31510662A9C2A7400B0209C /* WelcomeUserView.swift */; };
 		F31EE2B92A9B9DCC004AE7EB /* DateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31EE2B12A9B9DCC004AE7EB /* DateUtil.swift */; };
 		F31EE2BA2A9B9DCC004AE7EB /* PantryStapleErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31EE2B22A9B9DCC004AE7EB /* PantryStapleErrors.swift */; };
 		F31EE2BB2A9B9DCC004AE7EB /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31EE2B32A9B9DCC004AE7EB /* Utility.swift */; };
@@ -51,6 +53,8 @@
 
 /* Begin PBXFileReference section */
 		F31510602A9C20A600B0209C /* SAMPersistentStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAMPersistentStore.swift; sourceTree = "<group>"; };
+		F31510622A9C29CB00B0209C /* LandingScreenWhenSignedOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingScreenWhenSignedOutView.swift; sourceTree = "<group>"; };
+		F31510662A9C2A7400B0209C /* WelcomeUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeUserView.swift; sourceTree = "<group>"; };
 		F31EE2B12A9B9DCC004AE7EB /* DateUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtil.swift; sourceTree = "<group>"; };
 		F31EE2B22A9B9DCC004AE7EB /* PantryStapleErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PantryStapleErrors.swift; sourceTree = "<group>"; };
 		F31EE2B32A9B9DCC004AE7EB /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
@@ -104,6 +108,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F31510642A9C29EB00B0209C /* when signed out */ = {
+			isa = PBXGroup;
+			children = (
+				F31EE2CF2A9BC767004AE7EB /* LoginView.swift */,
+				F31510622A9C29CB00B0209C /* LandingScreenWhenSignedOutView.swift */,
+			);
+			path = "when signed out";
+			sourceTree = "<group>";
+		};
+		F31510652A9C29F500B0209C /* when signed in */ = {
+			isa = PBXGroup;
+			children = (
+				F31510662A9C2A7400B0209C /* WelcomeUserView.swift */,
+			);
+			path = "when signed in";
+			sourceTree = "<group>";
+		};
 		F31EE2B02A9B9D8F004AE7EB /* Swift Pantry Staples */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,8 +163,9 @@
 		F31EE2C32A9B9F26004AE7EB /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				F31510642A9C29EB00B0209C /* when signed out */,
+				F31510652A9C29F500B0209C /* when signed in */,
 				F31F25E12A9B986A00670827 /* ContentView.swift */,
-				F31EE2CF2A9BC767004AE7EB /* LoginView.swift */,
 				F31EE2D12A9BCF1F004AE7EB /* FormFieldView.swift */,
 			);
 			path = UI;
@@ -353,11 +375,13 @@
 				F31EE2C82A9BA030004AE7EB /* SAMAuthenticatedAPI.swift in Sources */,
 				F31510612A9C20A600B0209C /* SAMPersistentStore.swift in Sources */,
 				F31EE2BD2A9B9DCC004AE7EB /* UIDevice+Extension.swift in Sources */,
+				F31510672A9C2A7400B0209C /* WelcomeUserView.swift in Sources */,
 				F31EE2BF2A9B9DCC004AE7EB /* LocalJsonFileHandler.swift in Sources */,
 				F31EE2BE2A9B9DCC004AE7EB /* Network.swift in Sources */,
 				F31EE2C62A9BA00B004AE7EB /* SAMUnauthenticatedAPI.swift in Sources */,
 				F31EE2D22A9BCF1F004AE7EB /* FormFieldView.swift in Sources */,
 				F31EE2BC2A9B9DCC004AE7EB /* Extensions.swift in Sources */,
+				F31510632A9C29CB00B0209C /* LandingScreenWhenSignedOutView.swift in Sources */,
 				F31EE2B92A9B9DCC004AE7EB /* DateUtil.swift in Sources */,
 				F31F25E22A9B986A00670827 /* ContentView.swift in Sources */,
 				F31F25E02A9B986A00670827 /* SAMAppLauncher.swift in Sources */,

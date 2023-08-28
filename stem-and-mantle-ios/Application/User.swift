@@ -7,7 +7,7 @@
 
 import Foundation
 
-class User {
+class User: ObservableObject {
     
     var accountAccessData: UserAccountAccessData
     var api: SAMAuthenticatedAPI
