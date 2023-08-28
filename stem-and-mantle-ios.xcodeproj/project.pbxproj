@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F31510612A9C20A600B0209C /* SAMPersistentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31510602A9C20A600B0209C /* SAMPersistentStore.swift */; };
 		F31EE2B92A9B9DCC004AE7EB /* DateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31EE2B12A9B9DCC004AE7EB /* DateUtil.swift */; };
 		F31EE2BA2A9B9DCC004AE7EB /* PantryStapleErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31EE2B22A9B9DCC004AE7EB /* PantryStapleErrors.swift */; };
 		F31EE2BB2A9B9DCC004AE7EB /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31EE2B32A9B9DCC004AE7EB /* Utility.swift */; };
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F31510602A9C20A600B0209C /* SAMPersistentStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAMPersistentStore.swift; sourceTree = "<group>"; };
 		F31EE2B12A9B9DCC004AE7EB /* DateUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtil.swift; sourceTree = "<group>"; };
 		F31EE2B22A9B9DCC004AE7EB /* PantryStapleErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PantryStapleErrors.swift; sourceTree = "<group>"; };
 		F31EE2B32A9B9DCC004AE7EB /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 		F31EE2C42A9B9F4C004AE7EB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F31510602A9C20A600B0209C /* SAMPersistentStore.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 				F31EE2C02A9B9DCC004AE7EB /* PantryLog.swift in Sources */,
 				F31EE2BB2A9B9DCC004AE7EB /* Utility.swift in Sources */,
 				F31EE2C82A9BA030004AE7EB /* SAMAuthenticatedAPI.swift in Sources */,
+				F31510612A9C20A600B0209C /* SAMPersistentStore.swift in Sources */,
 				F31EE2BD2A9B9DCC004AE7EB /* UIDevice+Extension.swift in Sources */,
 				F31EE2BF2A9B9DCC004AE7EB /* LocalJsonFileHandler.swift in Sources */,
 				F31EE2BE2A9B9DCC004AE7EB /* Network.swift in Sources */,

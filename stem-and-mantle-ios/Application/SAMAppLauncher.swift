@@ -9,10 +9,11 @@ import SwiftUI
 
 @main
 struct SAMAppLauncher: App {
-    let app = SAMApp()
+    let app: SAMApp
     
     init() {
-        
+        self.app = SAMApp()
+        self.app.loadSavedUserIfExists()
     }
     var body: some Scene {
         WindowGroup {

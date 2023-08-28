@@ -10,10 +10,12 @@ import Foundation
 struct UserAccountAccessData: Codable {
     var host: SAMAPIHost
     var tokenData: SAMTokenData
+    var userName: String
     
-    init(host: SAMAPIHost, tokenData: SAMTokenData) {
+    init(host: SAMAPIHost, tokenData: SAMTokenData, userName: String) {
         self.host = host
         self.tokenData = tokenData
+        self.userName = userName
     }
     
 //    init(from decoder: Decoder) throws {

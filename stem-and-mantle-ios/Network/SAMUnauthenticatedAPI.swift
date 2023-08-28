@@ -39,7 +39,7 @@ class SAMUnauthenticatedAPI {
             }
             
             if let tokenData = tokenData {
-                let accessData = UserAccountAccessData(host: self.host, tokenData: tokenData)
+                let accessData = UserAccountAccessData(host: self.host, tokenData: tokenData, userName: username)
                 completion(Result.success(accessData))
             } else {
                 print("Weird, both tokenData & error are nil?")

@@ -9,7 +9,11 @@ import Foundation
 
 class SAMApp: ObservableObject {
     let api: SAMUnauthenticatedAPI
-    var user: User?
+    var user: User? {
+        didSet {
+            
+        }
+    }
     
     init() {
         self.api = SAMUnauthenticatedAPI(host: .local)
@@ -22,5 +26,21 @@ class SAMApp: ObservableObject {
     
     func signOut() {
         self.user = nil
+    }
+    
+    func saveUserAccessData() {
+        if let user = self.user {
+            SAMPersistentStore.forUserAccountAccess.save(user.accountAccessData)
+        }
+    }
+    
+    func loadSavedUserIfExists() {
+        if let savedAccount =
+            SAMPersistentStore.forUserAccountAccess.load() {
+            PantryLog.log("Saved user data exists for \(savedAccount.userName), loading that now")
+            let user = User(userData: savedAccount)
+            user.loadSavedData()
+            self.user = user
+        }
     }
 }
