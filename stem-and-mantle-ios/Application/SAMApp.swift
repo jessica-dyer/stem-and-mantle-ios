@@ -16,4 +16,11 @@ class SAMApp: ObservableObject {
         self.user = nil
     }
     
+    func signInFor(_ user: User) {
+        self.user = user
+    }
+    
+    func signOut() {
+        self.user = nil
+    }
 }

@@ -8,6 +8,9 @@
 import Foundation
 
 class SAMAuthenticatedAPI {
-    
+    let userData: UserAccountAccessData
+    init(userData: UserAccountAccessData) {
+        self.userData = userData
+    }
     
 }

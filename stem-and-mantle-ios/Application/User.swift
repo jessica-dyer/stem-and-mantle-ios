@@ -8,8 +8,11 @@
 import Foundation
 
 class User {
+
+    var api: SAMAuthenticatedAPI
     
-    var api: SAMAuthenticatedAPI?
-    
+    init(userData: UserAccountAccessData) {
+        self.api = SAMAuthenticatedAPI(userData: userData)
+    }
     
 }

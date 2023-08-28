@@ -14,8 +14,10 @@ class LoginViewModel: ObservableObject {
     func onLoginButtonTapped(app: SAMApp) {
         app.api.signIn(username: self.userName, password: self.password) { (result) in
             switch result {
-            case .success(let data):
-                print(data)
+            case .success(let userAccessData):
+                print(userAccessData)
+                let user = User(userData: userAccessData)
+                app.signInFor(user)
             case .failure(let error):
                 print(error)
             }
