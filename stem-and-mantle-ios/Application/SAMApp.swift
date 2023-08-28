@@ -25,10 +25,16 @@ class SAMApp: ObservableObject {
     init() {
         self.api = SAMUnauthenticatedAPI(host: .local)
         self.user = nil
+        
+        NotificationCenter.default.addObserver(forName: SAMAuthenticatedAPI.authenticationExpiredNotification, object: nil, queue: .main) {(_) in
+            self.signOut()
+        }
     }
     
     func signInFor(_ user: User) {
-        self.user = user
+        DispatchQueue.main.async {
+            self.user = user
+        }
     }
     
     func signOut() {
