@@ -30,4 +30,23 @@ class SAMAuthenticatedAPI {
             NotificationCenter.default.post(name:  SAMAuthenticatedAPI.authenticationExpiredNotification, object: nil)
         }
     }
+    
+    func getUserData(completion: @escaping( (Result<UserInfo, Error>) -> Void )) {
+        let urlString = self.userData.host.rawValue + "api/users/me"
+        let headers = ["Authorization": "Bearer " +  self.userData.tokenData.accessToken]
+        Network.getJsonObject(UserInfo.self, urlString, headers) { (userInfo, httpResponse, error) in
+            self.checkForAndHandleAuthError(error)
+            
+            if let error = error {
+                completion(.failure(error))
+                return
+            }
+            
+            if let userInfo = userInfo {
+                completion(Result.success(userInfo))
+            } else {
+                completion(.failure(PantryError.nilResponseAndNoError))
+            }
+        }
+    }
 }

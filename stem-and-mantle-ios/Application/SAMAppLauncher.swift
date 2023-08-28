@@ -17,7 +17,6 @@ struct SAMAppLauncher: App {
     }
     var body: some Scene {
         WindowGroup {
-            //self.app.currentRootView()
             if let user = app.user {
                 WelcomeUserView()
                     .environmentObject(self.app)

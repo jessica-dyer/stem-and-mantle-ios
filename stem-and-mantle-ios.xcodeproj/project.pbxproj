@@ -10,6 +10,7 @@
 		F31510612A9C20A600B0209C /* SAMPersistentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31510602A9C20A600B0209C /* SAMPersistentStore.swift */; };
 		F31510632A9C29CB00B0209C /* LandingScreenWhenSignedOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31510622A9C29CB00B0209C /* LandingScreenWhenSignedOutView.swift */; };
 		F31510672A9C2A7400B0209C /* WelcomeUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31510662A9C2A7400B0209C /* WelcomeUserView.swift */; };
+		F31510692A9C3D3400B0209C /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31510682A9C3D3400B0209C /* UserInfo.swift */; };
 		F31EE2B92A9B9DCC004AE7EB /* DateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31EE2B12A9B9DCC004AE7EB /* DateUtil.swift */; };
 		F31EE2BA2A9B9DCC004AE7EB /* PantryStapleErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31EE2B22A9B9DCC004AE7EB /* PantryStapleErrors.swift */; };
 		F31EE2BB2A9B9DCC004AE7EB /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31EE2B32A9B9DCC004AE7EB /* Utility.swift */; };
@@ -55,6 +56,7 @@
 		F31510602A9C20A600B0209C /* SAMPersistentStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAMPersistentStore.swift; sourceTree = "<group>"; };
 		F31510622A9C29CB00B0209C /* LandingScreenWhenSignedOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingScreenWhenSignedOutView.swift; sourceTree = "<group>"; };
 		F31510662A9C2A7400B0209C /* WelcomeUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeUserView.swift; sourceTree = "<group>"; };
+		F31510682A9C3D3400B0209C /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		F31EE2B12A9B9DCC004AE7EB /* DateUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtil.swift; sourceTree = "<group>"; };
 		F31EE2B22A9B9DCC004AE7EB /* PantryStapleErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PantryStapleErrors.swift; sourceTree = "<group>"; };
 		F31EE2B32A9B9DCC004AE7EB /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				F31510602A9C20A600B0209C /* SAMPersistentStore.swift */,
+				F31510682A9C3D3400B0209C /* UserInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -388,6 +391,7 @@
 				F31EE2BA2A9B9DCC004AE7EB /* PantryStapleErrors.swift in Sources */,
 				F31EE2CC2A9BA234004AE7EB /* SAMApp.swift in Sources */,
 				F31EE2D02A9BC767004AE7EB /* LoginView.swift in Sources */,
+				F31510692A9C3D3400B0209C /* UserInfo.swift in Sources */,
 				F31EE2CE2A9BA3E9004AE7EB /* UserAccountAccessData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
