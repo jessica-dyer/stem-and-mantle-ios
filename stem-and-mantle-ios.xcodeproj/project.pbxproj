@@ -33,6 +33,12 @@
 		F31F25F22A9B986B00670827 /* stem_and_mantle_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31F25F12A9B986B00670827 /* stem_and_mantle_iosTests.swift */; };
 		F31F25FC2A9B986B00670827 /* stem_and_mantle_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31F25FB2A9B986B00670827 /* stem_and_mantle_iosUITests.swift */; };
 		F31F25FE2A9B986B00670827 /* stem_and_mantle_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31F25FD2A9B986B00670827 /* stem_and_mantle_iosUITestsLaunchTests.swift */; };
+		F3B697D92AABAA2700F25906 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B697D82AABAA2700F25906 /* TabBarView.swift */; };
+		F3B697DB2AABAA3300F25906 /* SessionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B697DA2AABAA3300F25906 /* SessionsView.swift */; };
+		F3B697DD2AABAA3E00F25906 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B697DC2AABAA3E00F25906 /* StatsView.swift */; };
+		F3B697DF2AABAA8200F25906 /* EditSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B697DE2AABAA8200F25906 /* EditSessionView.swift */; };
+		F3B697E12AABAA8F00F25906 /* EditClimbView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B697E02AABAA8F00F25906 /* EditClimbView.swift */; };
+		F3B697E32AABAFB600F25906 /* TrainingSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B697E22AABAFB600F25906 /* TrainingSession.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +89,12 @@
 		F31F25F72A9B986B00670827 /* stem-and-mantle-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "stem-and-mantle-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F31F25FB2A9B986B00670827 /* stem_and_mantle_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stem_and_mantle_iosUITests.swift; sourceTree = "<group>"; };
 		F31F25FD2A9B986B00670827 /* stem_and_mantle_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stem_and_mantle_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F3B697D82AABAA2700F25906 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		F3B697DA2AABAA3300F25906 /* SessionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionsView.swift; sourceTree = "<group>"; };
+		F3B697DC2AABAA3E00F25906 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		F3B697DE2AABAA8200F25906 /* EditSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSessionView.swift; sourceTree = "<group>"; };
+		F3B697E02AABAA8F00F25906 /* EditClimbView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditClimbView.swift; sourceTree = "<group>"; };
+		F3B697E22AABAFB600F25906 /* TrainingSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingSession.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +135,11 @@
 			isa = PBXGroup;
 			children = (
 				F31510662A9C2A7400B0209C /* WelcomeUserView.swift */,
+				F3B697D82AABAA2700F25906 /* TabBarView.swift */,
+				F3B697DA2AABAA3300F25906 /* SessionsView.swift */,
+				F3B697DC2AABAA3E00F25906 /* StatsView.swift */,
+				F3B697DE2AABAA8200F25906 /* EditSessionView.swift */,
+				F3B697E02AABAA8F00F25906 /* EditClimbView.swift */,
 			);
 			path = "when signed in";
 			sourceTree = "<group>";
@@ -178,6 +195,7 @@
 			children = (
 				F31510602A9C20A600B0209C /* SAMPersistentStore.swift */,
 				F31510682A9C3D3400B0209C /* UserInfo.swift */,
+				F3B697E22AABAFB600F25906 /* TrainingSession.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -384,12 +402,18 @@
 				F31EE2C62A9BA00B004AE7EB /* SAMUnauthenticatedAPI.swift in Sources */,
 				F31EE2D22A9BCF1F004AE7EB /* FormFieldView.swift in Sources */,
 				F31EE2BC2A9B9DCC004AE7EB /* Extensions.swift in Sources */,
+				F3B697D92AABAA2700F25906 /* TabBarView.swift in Sources */,
 				F31510632A9C29CB00B0209C /* LandingScreenWhenSignedOutView.swift in Sources */,
 				F31EE2B92A9B9DCC004AE7EB /* DateUtil.swift in Sources */,
 				F31F25E22A9B986A00670827 /* ContentView.swift in Sources */,
+				F3B697E12AABAA8F00F25906 /* EditClimbView.swift in Sources */,
+				F3B697E32AABAFB600F25906 /* TrainingSession.swift in Sources */,
 				F31F25E02A9B986A00670827 /* SAMAppLauncher.swift in Sources */,
+				F3B697DB2AABAA3300F25906 /* SessionsView.swift in Sources */,
 				F31EE2BA2A9B9DCC004AE7EB /* PantryStapleErrors.swift in Sources */,
+				F3B697DF2AABAA8200F25906 /* EditSessionView.swift in Sources */,
 				F31EE2CC2A9BA234004AE7EB /* SAMApp.swift in Sources */,
+				F3B697DD2AABAA3E00F25906 /* StatsView.swift in Sources */,
 				F31EE2D02A9BC767004AE7EB /* LoginView.swift in Sources */,
 				F31510692A9C3D3400B0209C /* UserInfo.swift in Sources */,
 				F31EE2CE2A9BA3E9004AE7EB /* UserAccountAccessData.swift in Sources */,

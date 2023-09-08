@@ -18,7 +18,7 @@ struct SAMAppLauncher: App {
     var body: some Scene {
         WindowGroup {
             if let user = app.user {
-                WelcomeUserView()
+                TabBarView()
                     .environmentObject(self.app)
                     .environmentObject(user)
             } else {
