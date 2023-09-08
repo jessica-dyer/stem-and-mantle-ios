@@ -11,7 +11,7 @@ import MessageUI
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 class PantryLog: NSObject, MFMailComposeViewControllerDelegate {
     
-    static let APP_NAME = "YOU_APP_NAME_HERE"
+    static let APP_NAME = "stem_and_mantle"
     static let LOG_FILENAME_PREFIX = "pantryLog"
     static let LOGS_FOLDER_NAME = LOG_FILENAME_PREFIX+"s"
     

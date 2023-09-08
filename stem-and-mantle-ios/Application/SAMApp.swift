@@ -23,8 +23,7 @@ class SAMApp: ObservableObject {
     }
     
     init() {
-        self.api = SAMUnauthenticatedAPI(host: .local)
-        self.user = nil
+        self.api = SAMUnauthenticatedAPI(host: .prod)
         
         NotificationCenter.default.addObserver(forName: SAMAuthenticatedAPI.authenticationExpiredNotification, object: nil, queue: .main) {(_) in
             self.signOut()
@@ -51,9 +50,14 @@ class SAMApp: ObservableObject {
         if let savedAccount =
             SAMPersistentStore.forUserAccountAccess.load() {
             PantryLog.log("Saved user data exists for \(savedAccount.userName), loading that now")
-            let user = User(userData: savedAccount)
-            user.loadSavedData()
-            self.user = user
+            if self.api.host == savedAccount.host {
+                let user = User(userData: savedAccount)
+                user.loadSavedData()
+                self.user = user
+            } else {
+                PantryLog.log("Auto logging out. Host changed.")
+            }
+            
         }
     }
 }
