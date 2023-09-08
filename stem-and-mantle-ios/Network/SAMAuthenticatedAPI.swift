@@ -49,4 +49,23 @@ class SAMAuthenticatedAPI {
             }
         }
     }
+    
+    func getTrainingSessions(completion: @escaping( (Result<[TrainingSession], Error>) -> Void )) {
+        let urlString = self.userData.host.rawValue + "api/training-sessions"
+        let headers = ["Authorization": "Bearer " +  self.userData.tokenData.accessToken]
+        Network.getJsonObject([TrainingSession].self, urlString, headers) { (userInfo, httpResponse, error) in
+            self.checkForAndHandleAuthError(error)
+            
+            if let error = error {
+                completion(.failure(error))
+                return
+            }
+            
+            if let userInfo = userInfo {
+                completion(Result.success(userInfo))
+            } else {
+                completion(.failure(PantryError.nilResponseAndNoError))
+            }
+        }
+    }
 }

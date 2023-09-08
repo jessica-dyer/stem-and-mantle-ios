@@ -12,6 +12,7 @@ struct SessionsView: View {
     @EnvironmentObject var user: User
     
     @State var sessions: [TrainingSession]? = nil
+    @State var errorMessage: String? = nil
     
     var body: some View {
         NavigationView {
@@ -26,12 +27,17 @@ struct SessionsView: View {
                         Image(systemName: "plus")
                     }
                 }
+                .onAppear() {
+                    self.loadUserSessions()
+                }
         }
     }
     
     var contentView: some View {
         ZStack {
-            if self.sessions == nil {
+            if self.errorMessage != nil {
+                self.errorView
+            } else if self.sessions == nil {
                 self.loadingView
             } else if self.sessions?.isEmpty ?? false {
                 self.noSessionsView
@@ -77,10 +83,22 @@ struct SessionsView: View {
         }
     }
     
-    
+    var errorView: some View {
+        Text(self.errorMessage ?? "Unknown error")
+            .foregroundColor(.red)
+    }
     
     func loadUserSessions() {
-        
+        self.user.api.getTrainingSessions() { (result) in
+            switch result {
+            case .success(let trainingSessions):
+                self.sessions = trainingSessions
+            case .failure(let error):
+                self.errorMessage =
+                getWhyString(forError: error)
+            }
+            
+        }
     }
 }
 
