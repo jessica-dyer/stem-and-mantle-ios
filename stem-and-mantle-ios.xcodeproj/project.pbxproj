@@ -174,7 +174,6 @@
 			children = (
 				F31EE2C52A9BA00B004AE7EB /* SAMUnauthenticatedAPI.swift */,
 				F31EE2C72A9BA030004AE7EB /* SAMAuthenticatedAPI.swift */,
-				F31EE2CD2A9BA3E9004AE7EB /* UserAccountAccessData.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -196,6 +195,7 @@
 				F31510602A9C20A600B0209C /* SAMPersistentStore.swift */,
 				F31510682A9C3D3400B0209C /* UserInfo.swift */,
 				F3B697E22AABAFB600F25906 /* TrainingSession.swift */,
+				F31EE2CD2A9BA3E9004AE7EB /* UserAccountAccessData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";

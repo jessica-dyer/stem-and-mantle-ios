@@ -10,7 +10,9 @@ import Foundation
 class SAMAuthenticatedAPI {
     static let authenticationExpiredNotification = NSNotification.Name(rawValue:"authenticationExpiredNotification")
     
-    let userData: UserAccountAccessData
+    static let authenticationTokenUpdatedNotification = NSNotification.Name(rawValue:"authenticationTokenUpdatedNotification")
+    
+    var userData: UserAccountAccessData
     init(userData: UserAccountAccessData) {
         self.userData = userData
     }
@@ -23,11 +25,43 @@ class SAMAuthenticatedAPI {
         
         if let networkError = maybeAuthError as? NetworkError,
            case .httpStatusCodeError(let statusCode, _) = networkError,
-           statusCode == 401
+           statusCode == 403
         {
-            // TODO: Refresh token stuff goes here.
-            PantryLog.log("We are logging user out because of an auth error.")
-            NotificationCenter.default.post(name:  SAMAuthenticatedAPI.authenticationExpiredNotification, object: nil)
+            PantryLog.log("We have encountered an auth error, going to attempt to use the refresh token.")
+            self.refreshAuthToken(refreshToken: self.userData.tokenData.refreshToken) { (result: Result<SAMTokenData, Error>) in
+                switch result {
+                case .success(let tokenData):
+                    PantryLog.log("We have refreshed the auth credentials using the refresh token.")
+                    NotificationCenter.default.post(name:  SAMAuthenticatedAPI.authenticationTokenUpdatedNotification, object: nil, userInfo: ["tokenObject": tokenData])
+                case .failure(let error):
+                    PantryLog.log("Tried to use the refresh token, but received an error: " + getWhyString(forError: error))
+                    PantryLog.log("We are logging user out because of an auth error.")
+                    NotificationCenter.default.post(name:  SAMAuthenticatedAPI.authenticationExpiredNotification, object: nil)
+                }
+            }
+            
+        }
+    }
+    
+    typealias RefreshTokenResponseHandler = (Result<SAMTokenData, Error>) -> Void
+    
+    // Even though this is in authenticated API, does not
+    // need an auth token.
+    func refreshAuthToken(refreshToken: String, completion: @escaping(RefreshTokenResponseHandler)) {
+        
+        let urlString = self.userData.host.rawValue + "api/refresh-auth?refresh_token=" + refreshToken
+        
+        Network.getJsonObject(SAMTokenData.self, urlString) { (tokenData, httpResponse, error) in
+            if let error = error {
+                completion(.failure(error))
+                return
+            }
+            
+            if let tokenData = tokenData {
+                completion(Result.success(tokenData))
+            } else {
+                completion(.failure(PantryError.nilResponseAndNoError))
+            }
         }
     }
     
@@ -50,10 +84,10 @@ class SAMAuthenticatedAPI {
         }
     }
     
-    func getTrainingSessions(completion: @escaping( (Result<[TrainingSession], Error>) -> Void )) {
+    func getTrainingSessions(completion: @escaping( (Result<TrainingSessionListWrapper, Error>) -> Void )) {
         let urlString = self.userData.host.rawValue + "api/training-sessions"
         let headers = ["Authorization": "Bearer " +  self.userData.tokenData.accessToken]
-        Network.getJsonObject([TrainingSession].self, urlString, headers) { (userInfo, httpResponse, error) in
+        Network.getJsonObject(TrainingSessionListWrapper.self, urlString, headers) { (userInfo, httpResponse, error) in
             self.checkForAndHandleAuthError(error)
             
             if let error = error {

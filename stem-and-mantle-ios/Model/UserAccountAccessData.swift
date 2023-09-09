@@ -17,12 +17,6 @@ struct UserAccountAccessData: Codable {
         self.tokenData = tokenData
         self.userName = userName
     }
-    
-//    init(from decoder: Decoder) throws {
-//        let container = try decoder.container(keyedBy: CodingKeys.self)
-//        self.host = try container.decode(SAMAPIHost.self, forKey: .host)
-//        self.tokenData = try container.decode(SAMTokenData.self, forKey: .tokenData)
-//    }
 }
 
 struct SAMTokenData: Codable {

@@ -73,9 +73,8 @@ struct SessionsView: View {
             if let sessions = self.sessions {
                 List {
                     ForEach(sessions) { session in
-                        Text("Training session")
+                        Text(session.date)
                     }
-                
                 }
             } else {
                 Text("Should never happen.")
@@ -92,7 +91,8 @@ struct SessionsView: View {
         self.user.api.getTrainingSessions() { (result) in
             switch result {
             case .success(let trainingSessions):
-                self.sessions = trainingSessions
+                self.errorMessage = nil 
+                self.sessions = trainingSessions.training_sessions
             case .failure(let error):
                 self.errorMessage =
                 getWhyString(forError: error)

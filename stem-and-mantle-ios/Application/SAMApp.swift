@@ -23,10 +23,19 @@ class SAMApp: ObservableObject {
     }
     
     init() {
-        self.api = SAMUnauthenticatedAPI(host: .prod)
+        self.api = SAMUnauthenticatedAPI(host: .local)
         
         NotificationCenter.default.addObserver(forName: SAMAuthenticatedAPI.authenticationExpiredNotification, object: nil, queue: .main) {(_) in
             self.signOut()
+        }
+        
+        NotificationCenter.default.addObserver(forName: SAMAuthenticatedAPI.authenticationTokenUpdatedNotification, object: nil, queue: .main) {(notification) in
+            if let tokenData = notification.userInfo?["tokenObject"] as? SAMTokenData {
+                if self.user != nil {
+                    self.user!.accountAccessData.tokenData = tokenData
+                    self.user!.api.userData.tokenData = tokenData
+                }
+            }
         }
     }
     

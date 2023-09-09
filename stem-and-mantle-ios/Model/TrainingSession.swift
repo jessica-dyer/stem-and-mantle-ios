@@ -12,3 +12,7 @@ struct TrainingSession: Codable, Identifiable {
     let date: String
     let notes: String
 }
+
+struct TrainingSessionListWrapper: Codable {
+    let training_sessions: [TrainingSession]
+}
