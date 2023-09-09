@@ -18,7 +18,7 @@ class SAMAuthenticatedAPI {
     }
     
     private var refreshingAuthInProgress = false
-    private func checkForAndHandleAuthError(_ maybeAuthError: Error?) {
+    private func checkForAndHandleAuthError(_ maybeAuthError: Error?, doIfRetrying: @escaping( () -> Void )) {
         guard !refreshingAuthInProgress else {
             return
         }
@@ -33,6 +33,7 @@ class SAMAuthenticatedAPI {
                 case .success(let tokenData):
                     PantryLog.log("We have refreshed the auth credentials using the refresh token.")
                     NotificationCenter.default.post(name:  SAMAuthenticatedAPI.authenticationTokenUpdatedNotification, object: nil, userInfo: ["tokenObject": tokenData])
+                    doIfRetrying()
                 case .failure(let error):
                     PantryLog.log("Tried to use the refresh token, but received an error: " + getWhyString(forError: error))
                     PantryLog.log("We are logging user out because of an auth error.")
@@ -69,7 +70,9 @@ class SAMAuthenticatedAPI {
         let urlString = self.userData.host.rawValue + "api/users/me"
         let headers = ["Authorization": "Bearer " +  self.userData.tokenData.accessToken]
         Network.getJsonObject(UserInfo.self, urlString, headers) { (userInfo, httpResponse, error) in
-            self.checkForAndHandleAuthError(error)
+            self.checkForAndHandleAuthError(error) {
+                self.getUserData(completion: completion)
+            }
             
             if let error = error {
                 completion(.failure(error))
@@ -88,7 +91,9 @@ class SAMAuthenticatedAPI {
         let urlString = self.userData.host.rawValue + "api/training-sessions"
         let headers = ["Authorization": "Bearer " +  self.userData.tokenData.accessToken]
         Network.getJsonObject(TrainingSessionListWrapper.self, urlString, headers) { (userInfo, httpResponse, error) in
-            self.checkForAndHandleAuthError(error)
+            self.checkForAndHandleAuthError(error) {
+                self.getTrainingSessions(completion: completion)
+            }
             
             if let error = error {
                 completion(.failure(error))
