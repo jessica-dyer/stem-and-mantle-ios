@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct WelcomeUserView: View {
+struct UserProfileView: View {
     @EnvironmentObject var app: SAMApp
     @EnvironmentObject var user: User
     @State var userId: Int? = nil
@@ -22,6 +22,12 @@ struct WelcomeUserView: View {
             if let errorMessage = self.errorMessage {
                 Text(errorMessage)
                     .foregroundColor(.red)
+            }
+            Button {
+                self.app.signOut()
+            } label: {
+                Text("Logout")
+                    .foregroundColor(.blue)
             }
         }
         .onAppear() {
@@ -43,6 +49,6 @@ struct WelcomeUserView: View {
 
 struct WelcomeUserView_Previews: PreviewProvider {
     static var previews: some View {
-        WelcomeUserView()
+        UserProfileView()
     }
 }

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		F31510612A9C20A600B0209C /* SAMPersistentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31510602A9C20A600B0209C /* SAMPersistentStore.swift */; };
 		F31510632A9C29CB00B0209C /* LandingScreenWhenSignedOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31510622A9C29CB00B0209C /* LandingScreenWhenSignedOutView.swift */; };
-		F31510672A9C2A7400B0209C /* WelcomeUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31510662A9C2A7400B0209C /* WelcomeUserView.swift */; };
+		F31510672A9C2A7400B0209C /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31510662A9C2A7400B0209C /* UserProfileView.swift */; };
 		F31510692A9C3D3400B0209C /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31510682A9C3D3400B0209C /* UserInfo.swift */; };
 		F31EE2B92A9B9DCC004AE7EB /* DateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31EE2B12A9B9DCC004AE7EB /* DateUtil.swift */; };
 		F31EE2BA2A9B9DCC004AE7EB /* PantryStapleErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31EE2B22A9B9DCC004AE7EB /* PantryStapleErrors.swift */; };
@@ -61,7 +61,7 @@
 /* Begin PBXFileReference section */
 		F31510602A9C20A600B0209C /* SAMPersistentStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAMPersistentStore.swift; sourceTree = "<group>"; };
 		F31510622A9C29CB00B0209C /* LandingScreenWhenSignedOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingScreenWhenSignedOutView.swift; sourceTree = "<group>"; };
-		F31510662A9C2A7400B0209C /* WelcomeUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeUserView.swift; sourceTree = "<group>"; };
+		F31510662A9C2A7400B0209C /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
 		F31510682A9C3D3400B0209C /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		F31EE2B12A9B9DCC004AE7EB /* DateUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtil.swift; sourceTree = "<group>"; };
 		F31EE2B22A9B9DCC004AE7EB /* PantryStapleErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PantryStapleErrors.swift; sourceTree = "<group>"; };
@@ -134,7 +134,7 @@
 		F31510652A9C29F500B0209C /* when signed in */ = {
 			isa = PBXGroup;
 			children = (
-				F31510662A9C2A7400B0209C /* WelcomeUserView.swift */,
+				F31510662A9C2A7400B0209C /* UserProfileView.swift */,
 				F3B697D82AABAA2700F25906 /* TabBarView.swift */,
 				F3B697DA2AABAA3300F25906 /* SessionsView.swift */,
 				F3B697DC2AABAA3E00F25906 /* StatsView.swift */,
@@ -396,7 +396,7 @@
 				F31EE2C82A9BA030004AE7EB /* SAMAuthenticatedAPI.swift in Sources */,
 				F31510612A9C20A600B0209C /* SAMPersistentStore.swift in Sources */,
 				F31EE2BD2A9B9DCC004AE7EB /* UIDevice+Extension.swift in Sources */,
-				F31510672A9C2A7400B0209C /* WelcomeUserView.swift in Sources */,
+				F31510672A9C2A7400B0209C /* UserProfileView.swift in Sources */,
 				F31EE2BF2A9B9DCC004AE7EB /* LocalJsonFileHandler.swift in Sources */,
 				F31EE2BE2A9B9DCC004AE7EB /* Network.swift in Sources */,
 				F31EE2C62A9BA00B004AE7EB /* SAMUnauthenticatedAPI.swift in Sources */,

@@ -24,6 +24,10 @@ struct TabBarView: View {
                 .tabItem {
                     Label("Stats", systemImage: "square.and.pencil")
                 }
+            UserProfileView()
+                .tabItem {
+                    Label("Profile", systemImage: "person")
+                }
         }
     }
 }
