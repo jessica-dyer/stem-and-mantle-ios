@@ -33,6 +33,7 @@
 		F31F25F22A9B986B00670827 /* stem_and_mantle_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31F25F12A9B986B00670827 /* stem_and_mantle_iosTests.swift */; };
 		F31F25FC2A9B986B00670827 /* stem_and_mantle_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31F25FB2A9B986B00670827 /* stem_and_mantle_iosUITests.swift */; };
 		F31F25FE2A9B986B00670827 /* stem_and_mantle_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31F25FD2A9B986B00670827 /* stem_and_mantle_iosUITestsLaunchTests.swift */; };
+		F35A9F6C2AB4222A00FC6989 /* Gym.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35A9F6B2AB4222A00FC6989 /* Gym.swift */; };
 		F3B697D92AABAA2700F25906 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B697D82AABAA2700F25906 /* TabBarView.swift */; };
 		F3B697DB2AABAA3300F25906 /* SessionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B697DA2AABAA3300F25906 /* SessionsView.swift */; };
 		F3B697DD2AABAA3E00F25906 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B697DC2AABAA3E00F25906 /* StatsView.swift */; };
@@ -89,6 +90,7 @@
 		F31F25F72A9B986B00670827 /* stem-and-mantle-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "stem-and-mantle-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F31F25FB2A9B986B00670827 /* stem_and_mantle_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stem_and_mantle_iosUITests.swift; sourceTree = "<group>"; };
 		F31F25FD2A9B986B00670827 /* stem_and_mantle_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stem_and_mantle_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F35A9F6B2AB4222A00FC6989 /* Gym.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gym.swift; sourceTree = "<group>"; };
 		F3B697D82AABAA2700F25906 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		F3B697DA2AABAA3300F25906 /* SessionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionsView.swift; sourceTree = "<group>"; };
 		F3B697DC2AABAA3E00F25906 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 				F31510682A9C3D3400B0209C /* UserInfo.swift */,
 				F3B697E22AABAFB600F25906 /* TrainingSession.swift */,
 				F31EE2CD2A9BA3E9004AE7EB /* UserAccountAccessData.swift */,
+				F35A9F6B2AB4222A00FC6989 /* Gym.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -415,6 +418,7 @@
 				F31EE2CC2A9BA234004AE7EB /* SAMApp.swift in Sources */,
 				F3B697DD2AABAA3E00F25906 /* StatsView.swift in Sources */,
 				F31EE2D02A9BC767004AE7EB /* LoginView.swift in Sources */,
+				F35A9F6C2AB4222A00FC6989 /* Gym.swift in Sources */,
 				F31510692A9C3D3400B0209C /* UserInfo.swift in Sources */,
 				F31EE2CE2A9BA3E9004AE7EB /* UserAccountAccessData.swift in Sources */,
 			);
